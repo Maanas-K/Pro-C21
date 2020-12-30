@@ -13,7 +13,8 @@ function setup() {
   movingRect = createSprite(400,400,80,30);
   movingRect.shapeColor = "green";
   movingRect.debug = true;
-  movingRect.velocityX=5;
+  //movingRect.velocityX=5;
+
 }
 
 function draw() {
@@ -45,20 +46,10 @@ movingRect.shapeColor="red";
 //BounceOff(movingRect, fixedRect);
 Collide(movingRect,fixedRect);
 
+vel(movingRect,6,0);
+vel(fixedRect,-3,0);
+
   drawSprites();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
